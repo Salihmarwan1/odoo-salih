@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+    <record model="service.model" id="service_1">
+      <field name="name">Service 1</field>
+      <field name="price">100</field>
+    </record>
+    <record model="service.model" id="service_2">
+      <field name="name">Service 2</field>
+      <field name="price">200</field>
+    </record>
+    <record model="booking.model" id="booking_1">
+      <field name="service_id" ref="service_1"/>
+      <field name="appointment_time">2022-01-01 12:00:00</field>
+      <field name="registration_number">ABC123</field>
+      <field name="contact_name">John Doe</field>
+      <field name="contact_email">john.doe@example.com</field>
+      <field name="contact_phone">+123456789</field>
+      <field name="confirmation">yes</field>
+    </record>
+  </data>
+</odoo>

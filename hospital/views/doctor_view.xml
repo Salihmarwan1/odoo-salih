@@ -98,6 +98,7 @@
         <field name="context">{}</field>
     </record>
 
+    <menuitem id="menu_hospital_root" name="Hospital" sequence="10"/>
 
     <menuitem id="menu_doctor_root" 
               name="Doctors"  

@@ -1,0 +1,23 @@
+<template id="vehicle_info_template">
+    <li><a href="/vehicle_info" t-if="is_user()">Ve Information</a></li>
+    <script type="text/javascript" src="/vehicle_info/static/src/js/vehicle_info.js"/>hicle
+    
+</template>
+
+<template>
+    <t t-call="website.layout">
+        <div class="container mt32 mb32">
+            <h1>Vehicle Information</h1>
+            <form t-attf-action="#">
+                <div class="form-group">
+                    <label for="vehicle_reg_no">Registration Number:</label>
+                    <input type="text" class="form-control" id="vehicle_reg_no">
+                </div>
+                <button type="submit" class="btn btn-primary" id="get_vehicle_info">Get Vehicle Information</button>
+            </form>
+            <div id="vehicle_info_result"/>
+                <!-- Vehicle information will be displayed here -->
+            </div>
+        </div>
+    </t>
+</template>

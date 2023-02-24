@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="view_vehicle_information_tree">
+      <field name="name">vehicle.information.tree</field>
+      <field name="model">vehicle.information</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="registration_number" string="Registration Number"/>
+          <field name="make" string="Car brand"/>
+          <field name="model" string="Model"/>
+          <field name="color" string="Color"/>
+          <field name="year" string="Year"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

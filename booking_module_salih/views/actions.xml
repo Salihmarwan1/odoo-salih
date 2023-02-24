@@ -1,0 +1,12 @@
+<odoo>
+  <data>
+    <record model="ir.actions.act_window" id="booking_model_action">
+      <field name="name">Booking</field>
+      <field name="res_model">booking.model</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p>This is the help text for the booking module.</p>
+      </field>
+    </record>
+  </data>
+</odoo>

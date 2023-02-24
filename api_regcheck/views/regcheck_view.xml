@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <odoo>
+    
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Online Booking">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/website_calendar_ce/static/src/scss/website_calendar_ce.scss" t-ignore="true"/>
+            <script type="text/javascript" src="/api_regcheck/static/src/js/get_car_model.js"/>
+        </xpath>
+    </template>
+
+    <template id="vehicle" name="Vehicle">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_website_calendar">
+                <div class="oe_structure"/>
+                    <div class="oe_structure container mb128">
+                         <div class="form-group row col-xl-8 form-field">
+                            <label for="plate_number" class="col-md-4 col-form-label">Vehicle Plate Number</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control o_website_form_input" name="plate_number" placeholder="Enter Plate Number" required="1" id="plate_number_field" t-att-value="'plate_number' in partner_data and partner_data['plate_number']"/>
+                            </div>
+                            </div>
+                            
+                            
+                               <div class="col-lg-5" style="text-align: end;margin: auto;">
+                                <a href="#"  id="get_car_model">
+                                    <i class="fa fa-fw o_button_icon fa-arrow-right"/>  
+                                </a>
+                               </div>
+
+                              <div class="form-group row col-xl-8 form-field">
+                            <label for="model_field" class="col-md-4 col-form-label">Vehicle Model</label>
+                            <div class="col-md-8">
+                                 <input type="text" id="model_field"/>
+                            </div>
+                        
+                    </div>
+                <div class="oe_structure"/>
+            </div>
+            
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,4 @@
+<odoo>
+  <menuitem id="booking_menu" name="Booking"/>
+  <menuitem id="booking_form_menu" name="Booking Form" parent="booking_menu" action="booking_form_action"/>
+</odoo>

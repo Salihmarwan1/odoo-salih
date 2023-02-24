@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <odoo>
+<template id="vehicle_info_template">
+    <t t-call="website.layout">
+        <div class="container mt32 mb32">
+            <h1>Vehicle Information</h1>
+            <form t-attf-action="#">
+                <div class="form-group">
+                    <label for="vehicle_reg_no">Registration Number:</label>
+                    <input type="text" class="form-control" id="vehicle_reg_no"/>
+                </div>
+                <button type="submit" class="btn btn-primary" id="get_vehicle_info">Get Vehicle Information</button>
+            </form>
+            <div id="vehicle_info_result">
+                <!-- Vehicle information will be displayed here -->
+            </div>
+        </div>
+    </t>
+</template>
+
+</odoo>

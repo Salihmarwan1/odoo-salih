@@ -1,0 +1,1 @@
+school_user,Base User,model_school_profile,base.group_user,1,1,1,1

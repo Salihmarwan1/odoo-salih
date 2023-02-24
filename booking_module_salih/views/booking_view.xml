@@ -1,0 +1,27 @@
+<odoo>
+  <record model="ir.ui.view" id="booking_form_view">
+    <field name="name">Booking Form View</field>
+    <field name="model">booking.model</field>
+    <field name="arch" type="xml">
+      <form string="Booking">
+        <group>
+          <field name="service_id"/>
+          <field name="appointment_time"/>
+          <field name="registration_number"/>
+        </group>
+        <group>
+          <field name="contact_name"/>
+          <field name="contact_email"/>
+          <field name="contact_phone"/>
+        </group>
+        <group>
+          <field name="confirmation"/>
+        </group>
+        <footer>
+          <button name="save" string="Save" type="object" class="oe_highlight"/>
+          <button name="cancel" string="Cancel" type="object"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>
